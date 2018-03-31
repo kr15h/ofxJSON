@@ -96,10 +96,10 @@ bool ofxJSONElement::save(const std::string& filename, bool pretty) const
     if (pretty)
     {
         Json::StyledWriter writer;
-        file << writer.write( *this ) << endl;
+        file << writer.write( *this ) << std::endl;
     } else {
         Json::FastWriter writer;
-        file << writer.write( *this ) << endl;
+        file << writer.write( *this ) << std::endl;
     }
 
     ofLogVerbose("ofxJSONElement::save") << "JSON saved to " << file.getAbsolutePath() << ".";

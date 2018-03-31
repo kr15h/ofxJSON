@@ -14,7 +14,7 @@ void ofApp::setup()
     }
     else
     {
-        ofLogNotice("ofApp::setup")  << "Failed to parse JSON" << endl;
+        ofLogNotice("ofApp::setup")  << "Failed to parse JSON" << std::endl;
     }
 }
 

@@ -35,7 +35,7 @@ void ofApp::setup()
     }
     else
     {
-        ofLogError("ofApp::setup")  << "Failed to parse JSON" << endl;
+        ofLogError("ofApp::setup")  << "Failed to parse JSON" << std::endl;
     }
 
 
@@ -59,7 +59,7 @@ void ofApp::draw()
 
 //        "age": 25,
 
-    ss << "age                = " << result["age"].asDouble() << endl;
+    ss << "age                = " << result["age"].asDouble() << std::endl;
 
 //        "address": {
 //            "streetAddress": "21 2nd Street",
