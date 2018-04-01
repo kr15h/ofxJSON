@@ -36,7 +36,7 @@ bool ofxJSONElement::parse(const std::string& jsonString)
 }
 
 
-bool ofxJSONElement::open(const string& filename)
+bool ofxJSONElement::open(const std::string& filename)
 {
     if (filename.find("http://") == 0 || filename.find("https://") == 0)
     {
